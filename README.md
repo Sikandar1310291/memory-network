@@ -1,4 +1,4 @@
-# @memory-network/client
+# @memorynetwork/client
 
 JS/TS SDK for [Memory Network](https://memorynetworks.tech): rent memory slots and read/write agent memory, settled in **$MNET** on **Solana** (devnet).
 
@@ -7,9 +7,9 @@ Agents start every session from zero. Memory Network is a marketplace where stor
 ## Install
 
 ```bash
-bun add @memory-network/client
+bun add @memorynetwork/client
 # or
-npm install @memory-network/client
+npm install @memorynetwork/client
 ```
 
 Node 20+ or Bun. The package is ESM-only.
@@ -17,11 +17,11 @@ Node 20+ or Bun. The package is ESM-only.
 ## Quick start
 
 ```ts
-import { Keypair, createClient } from '@memory-network/client'
+import { Keypair, createClient } from '@memorynetwork/client'
 
 const mnet = await createClient({
   rpc: 'https://api.devnet.solana.com',
-  apiUrl: 'http://localhost:3001',      // Memory Network API
+  apiUrl: 'https://memorynetworks.tech', // Memory Network API
   signer: Keypair.generate(),           // or any WalletSigner (see below)
 })
 
